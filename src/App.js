@@ -1,4 +1,4 @@
-import {Route, Routes} from"react-router-dom";
+import {HashRouter as Router, Routes, Route} from"react-router-dom";
 import './App.css';
 import Home from './Plans';
 import Beaches from './Beaches';
@@ -13,7 +13,7 @@ let App=() => {
   return (
     <div className="App">
       <NavbarComponent/>
-      
+      <Router>
       <Routes>
         <Route path="/" element={<Home></Home>}/>
         <Route path="/Hills" element={<Hills></Hills>}/>
@@ -23,6 +23,7 @@ let App=() => {
         <Route path="/About" element={<About></About>}/>
         <Route path="/Contact" element={<Contact></Contact>}/>
       </Routes>
+      </Router>
     </div>
     
   );
