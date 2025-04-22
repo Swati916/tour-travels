@@ -13,7 +13,7 @@ let App=() => {
   return (
     <div className="App">
       <NavbarComponent/>
-      <Router>
+      <Router basename="/tour-travels">
       <Routes>
         <Route path="/" element={<Home></Home>}/>
         <Route path="/Hills" element={<Hills></Hills>}/>
