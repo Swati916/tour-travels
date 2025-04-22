@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import Aos from "aos";
 import "./App.css";
 
-let About=()=>{
+let Know=()=>{
      useEffect(()=>{
                 Aos.init({duration:1000})
               },[]
@@ -164,4 +164,4 @@ let About=()=>{
     )
 }
 
-export default About;
+export default Know;

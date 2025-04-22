@@ -1,4 +1,4 @@
-import {HashRouter as Router, Routes, Route} from"react-router-dom";
+import {Route, Routes} from"react-router-dom";
 import './App.css';
 import Home from './Plans';
 import Beaches from './Beaches';
@@ -6,24 +6,23 @@ import Hills from "./Hills";
 import Splaces from "./Splaces"
 import Adventures from "./Adventures"
 import NavbarComponent from "./Navbar";
-import About from "./About";
-import Contact from "./Contact";
+import Know from "./Know";
+import Last from "./Last";
 
 let App=() => {
   return (
     <div className="App">
       <NavbarComponent/>
-      <Router basename="/tour-travels">
+      
       <Routes>
         <Route path="/" element={<Home></Home>}/>
         <Route path="/Hills" element={<Hills></Hills>}/>
         <Route path="/Beaches" element={<Beaches></Beaches>}/>
         <Route path="/Splaces" element={<Splaces></Splaces>}/>
         <Route path="/Adventures" element={<Adventures></Adventures>}/>
-        <Route path="/About" element={<About></About>}/>
-        <Route path="/Contact" element={<Contact></Contact>}/>
+        <Route path="/Know" element={<Know></Know>}/>
+        <Route path="/Last" element={<Last></Last>}/>
       </Routes>
-      </Router>
     </div>
     
   );

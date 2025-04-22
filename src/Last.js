@@ -4,7 +4,7 @@ import "./App.css";
 import axios from "axios";
 import {useForm} from "react-hook-form";
 
-let Contact=()=>{
+let Last=()=>{
     const {
         register,
         handleSubmit,
@@ -114,4 +114,4 @@ let Contact=()=>{
     )
 };
 
-export default Contact;
+export default Last;
