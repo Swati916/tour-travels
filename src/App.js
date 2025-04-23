@@ -1,4 +1,4 @@
-import {HashRouter as Router, Route, Routes} from"react-router-dom";
+import {Route, Routes} from"react-router-dom";
 import './App.css';
 import Home from './Plans';
 import Beaches from './Beaches';
@@ -11,7 +11,6 @@ import Last from "./Last";
 
 let App=() => {
   return (
-    <Router>
     <div className="App">
       <NavbarComponent/>
       
@@ -25,7 +24,6 @@ let App=() => {
         <Route path="/Last" element={<Last></Last>}/>
       </Routes>
     </div>
-    </Router>
     
   );
 }
