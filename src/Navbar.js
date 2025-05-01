@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Aos from 'aos';
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 let NavbarComponent=()=>{
   useEffect(()=>{
     Aos.init({duration:1000});
@@ -27,8 +27,8 @@ let NavbarComponent=()=>{
 
       <div className='side'>
         <ul>
-          <li><a href='./About'>About</a></li>
-          <li><a href='./Contact'>Contact</a></li>
+          <li><Link to='./Know'>About</Link></li>
+          <li><Link to='./Last'>Contact</Link></li>
         </ul>
       </div>
     </Navbar>
