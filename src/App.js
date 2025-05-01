@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Route, Routes} from"react-router-dom";
+import {Route, Routes} from"react-router-dom";
 import './App.css';
 import Home from './Plans';
 import Beaches from './Beaches';
@@ -13,7 +13,6 @@ let App=() => {
   return (
     <div className="App">
       <NavbarComponent/>
-      <Router>
       <Routes>
         <Route path="/" element={<Home></Home>}/>
         <Route path="/Hills" element={<Hills></Hills>}/>
@@ -23,7 +22,6 @@ let App=() => {
         <Route path="/Know" element={<Know></Know>}/>
         <Route path="/Last" element={<Last></Last>}/>
       </Routes>
-      </Router>
     </div>
     
   );
